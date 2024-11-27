@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 140px;
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+header nav{
+    height: 100%;
+    margin-left: 35.5%;
+    width: 30%;
+    /* border: 1px solid green; */
+}
+header nav h1{
+    color:rgb(109, 109, 168);
+    /* font-weight: 800; */
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.a{
+    height: 900px;
+    width: 100%;
+    /* border: 1px solid black; */
+    position: relative;
+}
+ .pic1{
+    height: 300px;
+    width: 40%;
+    /* border: 2px solid red; */
+    float: left;
+    margin-left: 7%;
+    background-image: url(img/apps-calendar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ .pic2{
+    height: 300px;
+    width: 40%;
+    /* border: 1px solid black; */
+    float: left;
+    margin-left: 6%;
+    background-image: url(img/apps-chat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.a .a2{
+    height: 420px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-top: 50px;
+}
+.a p{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 60px;
+    color: rgb(67, 43, 26);
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a button{
+    height: 60px;
+    width: 180px;
+    border: 1px solid rgb(107, 124, 162);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(107, 124, 162);
+}
+button:hover{
+    background-color: rgb(151, 151, 204);
+    cursor: pointer;
+    color: azure;
+}

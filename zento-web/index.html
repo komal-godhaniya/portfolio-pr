@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <!-- <link rel="stylesheet" href="task.css"> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: #FACFD0;  
+}
+#sec{
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main{
+    height: auto;
+    width: 30%;
+    background-color: #FFF4F5;
+    padding: 23px;
+}
+form{
+    border: 2px dotted palevioletred;
+    border-radius: 8px;
+    height: auto;
+}
+h4{
+    margin-left: 270px;
+    margin-top: 15px;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
+span{
+    color: red;
+}
+label{
+   margin-left: 65px;
+}
+.input{
+    /* float: left; */
+    margin-left: 65px;
+    margin-top: 15px;
+    width: 60%;
+    height: 25px;
+}
+#submit{
+    margin-left: 65px;
+    width: 60%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #FF6481;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+h5{
+    margin-left: 65px; 
+    margin-top: 10px;
+    color: red;
+}
+</style>
+<body>
+    <div id="sec">
+        <div class="main">
+            <form id="form" action="">
+                <h4>Sign Up</h4>
+                <h2>Login</h2> <br>
+                <label for="">Username<span> *</span></label> 
+                <input id="u_name" class="input" type="text">
+                <h5 id="err_1"></h5>
+                <br>
+                <label for="">Password<span> *</span></label> 
+                <input id="pass" class="input" type="password"> 
+                <h5 id="err_2"></h5>
+
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+$(document).ready(function(){
+    
+    $("#form").submit(function(event){
+
+
+        event.preventDefault()
+        let isValid = true;
+
+        // Username
+
+        $("#err_1").text("")
+        let user = $("#u_name").val()
+
+        if(user === ""){
+
+            isValid = false;
+            $("#err_1").text("Please enter name !")
+        }
+
+        let storepass = "1"
+        let enterpass = document.getElementById("pass").value
+
+        if (enterpass === storepass) {
+
+            isValid = true;
+         }
+         else if(enterpass !== storepass){
+
+            isValid = false;
+            $("#err_2").text("Enter valid password...")
+            alert("Enter pasword : 1" )
+
+         }
+
+
+        if(isValid){
+            location = "home.html";
+        }
+    })
+})
+
+
+</script>

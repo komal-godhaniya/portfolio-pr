@@ -1,0 +1,51 @@
+    
+    /* media */
+
+
+@media (min-width :0px) and (max-width:1200px) {
+  
+    /* section-1 */
+#sec-2 #main-col{
+    width: 100%;
+}
+#sec-2 #row-2 h6{
+    font-size: 12px;
+}
+
+}   
+
+@media (min-width :770px) and (max-width:990px) {
+  
+    /* section-1 */
+
+#head{
+    width: 100%;
+}    
+#head h6{
+    margin-top: 100px;
+}
+#text .col {
+    width: 50%;
+}
+}    
+
+@media (min-width : 0px) and (max-width: 572px) 
+{
+#text .col{
+    width: 80%;
+} 
+h6,
+#head button{
+   font-size: 12px; 
+}
+#head button{
+    width: 75px;
+}
+#text #email{
+    width: 100%;
+}
+#sec1 button{
+    display: none;
+}
+
+}
